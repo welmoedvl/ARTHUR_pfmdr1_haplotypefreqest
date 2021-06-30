@@ -1,3 +1,11 @@
+# The Haplotype Frequency Estimation Model was created by Aimee Taylor as an R package.
+# All code can be found at: https://github.com/artaylor85/FreqEstimationModel.
+# Published work describing and applying the model: 
+# Taylor AR, Flegg JA, Nsobya SL, Yeka A, Kamya MR, Rosenthal PJ, Dorsey G, Sibley CH, Guerin PJ, Holmes CC. Estimation of malaria haplotype and genotype frequencies: a statistical approach to overcome the challenge associated with multiclonal infections. Malar J. 2014 Mar 17;13:102. doi: 10.1186/1475-2875-13-102. PMID: 24636676; PMCID: PMC4004158.
+# Taylor AR, Flegg JA, Holmes CC, Guérin PJ, Sibley CH, Conrad MD, Dorsey G, Rosenthal PJ. Artemether-Lumefantrine and Dihydroartemisinin-Piperaquine Exert Inverse Selective Pressure on Plasmodium Falciparum Drug Sensitivity-Associated Haplotypes in Uganda. Open Forum Infect Dis. 2016 Oct 25;4(1):ofw229. doi: 10.1093/ofid/ofw229. PMID: 28480232; PMCID: PMC5413987.
+
+# The code below was copied from Ms Taylor's code and adapted by me (indicated by "WvL") 
+# to analyse our data on pfmdr1 allele combination frequencies. 
 
 #########
 # R-setup:
@@ -13,7 +21,7 @@ library(kableExtra)
 
 
 #########
-# TO-DO by model user:
+# TO-DO by model user (WvL):
 
 # 1. define filename for PDF with results & diagnostics
 # 2. Set working directory to source file location
