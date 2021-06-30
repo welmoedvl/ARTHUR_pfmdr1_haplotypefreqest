@@ -158,9 +158,9 @@ gelman.diag(mcmc_frequency_chains, transform = TRUE, multivariate = FALSE) # Tra
 
 
 #########
-# Extract data summary -WvL:
+# Extract data summary (WvL):
 
-# Extract estimates of haplotype frequency (post burnin)
+# Extract estimates of haplotype frequency (post burnin) (WvL)
 
 arr_genfreq <- results$genotype_freq_store_chains
 arr_genfreq %>% dim
@@ -171,7 +171,7 @@ lst_genfreq[[1]] %>% dim
 dt_genfreq <- rbindlist(lst_genfreq)
 dt_genfreq %>% dim
 
-# Have a quick look at the distributions
+# Have a quick look at the distributions (WvL)
 
 dt_genfreq %>%
   setNames(paste("haplo_", names(.), sep = "")) %>%
@@ -197,7 +197,7 @@ lst_genfreq[[1]] %>%
   theme_bw()
 
 
-# summarize the frequencies by haplotype:
+# summarize the frequencies by haplotype (WvL):
 
 tableby(~., data = dt_genfreq,
         numeric.stats = c("mean", "median", "range", "q1q3")) %>%
@@ -217,7 +217,7 @@ dt_genfreq %>%
                    Q97.5 = quantile(freq, 0.975, na.rm = T))
 
 
-# Final summary table:
+# Final summary table (WvL):
 
 dt_genfreq %>%
   setNames(paste("haplo_", names(.), sep = "")) %>%
